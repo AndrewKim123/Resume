@@ -1,87 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@media (max-width: 600px) {
+    header {
+      flex-direction: column;
+    }
+  
+    h1 {
+      font-size: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
     font-family: 'Poppins', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
+     
 }
- header{
-    position: fixed;
-    width: 100%;
-    top:0;
-    right:0;
-    z-index: 1000;
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    border-left: 85px solid #333333;
+    padding-left: 10px;
+  }
+  
+  header {
+    background-color: #eeeeee;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  p {
+    font-size: 16px;
+    margin: 0;
+  }
+  
+  section {
+    margin: 20px 0;
+    width: 70%;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  h3 {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  img {
+    width: 300px;
+    height: 300x;
+    border: 2px solid #333333;
+    border-radius: 20px;
+    float: left;
+    margin-right: 20px;
+  }
+  
+  .about-me {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    background: transparent;
-    padding: 22px 15%;
-    border-bottom: 1px solid transparent;
-    transition: all .45s ease;
- }
+  }
 
- .logo{
-    color: #758C7D;
-    font-size: 35px;
-    font-weight: 700;
-    letter-spacing: 1px;
- }
-
- .navlist{
-    display:flex;
- }
- .navlist a{
-    color: #32312C;
-    font-size: 17px;
-    font-weight: 500;
-    margin: 0 25px;
-    transition: all .45s ease;
- }
-
-.navlist a:hover{
-    color: #758C7D; 
-}
-.navlist a.active{
-    color: #758C7D;
-}
-
-#menu-icon{
-    font-size: 35px;
-    color: #32312C;
-    z-index: 10001;
-    cursor: pointer;
-    margin-left: 25px;
-    display:none;
-}
-
-section{
-    padding: 160px 15% 120px;
-}
-
-.home{
-    position: relative;
-    height: 100vh;
-    width: 100%;
-    background-image: url(./pastelblue.webp);
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-.slide{
-    margin-bottom: 20px;
-}
-.home-text{
-    font-size: 20px;
-    font-weight: 700;
-    list-style: 1.1;
-    margin: 0 0 8px;
-}
-.about-img{
-    width:80%;
-}
+  .textabout{
+    width:50%;
+  }
